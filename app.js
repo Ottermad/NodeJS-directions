@@ -22,9 +22,8 @@ function get(key, to, from) {
 		response.on("end", function() {
 			if (response.statusCode === 200) {
 				try {
-					var body2 = {body};
-					var body3 = JSON.parse(body2);
-					console.log(body3.renderNarrative)
+					var body2 = JSON.parse(body);
+					console.dir(body2);
 				} catch (error) {
 					// Parse Error
 					console.log("1");
